@@ -18,6 +18,7 @@ git show [SHA]                 # Show any object in Git in human-readable format
 # Share-Update
 
 git remote add [ALIAS] [URL]   # add git URL as an alias
+git remote -v                  # remote origin information
 git fetch [ALIAS]              # Fetch down all the branches from that Git remote
 git merge [ALIAS]/[BRANCH]     # Merge a remote branch into your current branch to bring it up to date
 git push [ALIAS] [BRANCH]      # Transmit local branch commits to the remote repository branch
