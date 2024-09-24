@@ -65,3 +65,13 @@ git config --global core.exludesfile [FILE]    # system wide ignore pattern for 
 logs/
 *.notes
 pattern*/
+
+# Security
+
+ssh-keygen -t rsa -b 4096 -C "email@example.com" #Create it on Local PC and save it in "Github-Settings-Deploy Keys" section.
+cat ~/.ssh/id_rsa.pub
+
+Go to settings from your GitHub profile, get to the page “SSH and GPG keys”, click “New SSH key”.
+
+git clone git@github.com:username/reponame.git    # Enter the command with your URL to clone the repo to your system
+git remote set-url origin git@github.com:username/reponame.git
