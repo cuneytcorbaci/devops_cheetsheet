@@ -52,6 +52,7 @@ git merge [branch]             # Merge the specified branch's history into the c
 
 git status
 git add [FILE]                         # Add a file as it looks now to your next commit (stage)
+git add .                              # Add all files in the folder
 git reset [FILE]                       # Unstage a file while retaining the changes in working directory
 git diff                               # Diff of what changed but not staged
 git diff --staged                      # Diff of waht is staged but not yet committed
