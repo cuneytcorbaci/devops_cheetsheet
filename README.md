@@ -6,5 +6,5 @@ It contains shortcuts to help commands of tools and technologies in the Devops A
 - [Git](Git.txt)
 - [MarkDown](MarkDown.txt)
 - [Linux Commandline](./Linux%20Commandline.txt)
-
+- Yeni satırlar deneme için eklendi
 
