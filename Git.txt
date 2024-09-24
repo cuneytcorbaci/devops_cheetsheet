@@ -45,7 +45,7 @@ git log -- stat -M             # Show all commit logs with indication of any pat
 # Branch-Merge
 
 Git branch                     # list your brnaches.a* will appear next to the currently active branch
-git branch [BRANCH-NAME]       # Create a new branch at the current commit
+git branch [BRANCH-NAME]       # Create a new branch at the current commit (git checkout -b)
 git checkout                   # Switch to another branch and check it out into your working directory
 git merge [branch]             # Merge the specified branch's history into the current one
 
