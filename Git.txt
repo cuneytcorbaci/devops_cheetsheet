@@ -1,0 +1,66 @@
+# Config
+git config --global user.name "[name]"         # set a username
+git config --global user.email "[valid-email]" # set an email address
+git config --global color .ui auto             # set automatic command line coloring for Git for easy reviewing
+
+# Setup
+
+git init
+git clone [URL]
+
+# Inspect-Compare
+
+git log
+git log branchB..brachA        # Show the commits that changed file,even across renames
+git diff brancB... branchA     # Show the diff of waht is in branchA that is not branchB
+git show [SHA]                 # Show any object in Git in human-readable format
+
+# Share-Update
+
+git remote add [ALIAS] [URL]   # add git URL as an alias
+git fetch [ALIAS]              # Fetch down all the branches from that Git remote
+git merge [ALIAS]/[BRANCH]     # Merge a remote branch into your current branch to bring it up to date
+git push [ALIAS] [BRANCH]      # Transmit local branch commits to the remote repository branch
+git pull                       # Fetch and merge any commits from the tracking remote branch
+
+# Rewrite History
+
+git rebase [BRANCH]            # Apply any commits of current branch ahead of specified one
+git reset --hard [COMMIT]      # Clear staging area, rewrite wirking tree from specified commit
+
+# Temprory Commits
+
+git stash                      # Save modified adn staged changes
+git stash list                 # list stack-order of stashed file changes
+git stash pop                  # write working from top of stash stack
+git stash drop                 # discard the changes from top of stash stack
+
+# Tracking Path Changes
+
+git rm [FILE]                  # Delete the file from project and stage the removal for commit
+git mv [FILE]                  # Change an existing file path and stage the move
+git log -- stat -M             # Show all commit logs with indication of any paths that moved
+
+# Branch-Merge
+
+Git branch                     # list your brnaches.a* will appear next to the currently active branch
+git branch [BRANCH-NAME]       # Create a new branch at the current commit
+git checkout                   # Switch to another branch and check it out into your working directory
+git merge [branch]             # Merge the specified branch's history into the current one
+
+# Stage Snapshot
+
+git status
+git add [FILE]                         # Add a file as it looks now to your next commit (stage)
+git reset [FILE]                       # Unstage a file while retaining the changes in working directory
+git diff                               # Diff of what changed but not staged
+git diff --staged                      # Diff of waht is staged but not yet committed
+git commit -m "[descriptive message]"  # Commit your staged content as a new commit snapshot
+
+
+# Ignoring Patterns
+
+git config --global core.exludesfile [FILE]    # system wide ignore pattern for all local repositories 
+logs/
+*.notes
+pattern*/
